@@ -1,0 +1,1 @@
+How to prove $G(F(N)) = \Theta(F(N))$ 

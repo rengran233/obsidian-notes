@@ -1,0 +1,2 @@
+"p implies q", "p only if q" and "if p, then q" are equivalent?
+In implication statement $p \to q$ , p represents hypothesis and q represents conclusion. So we can rewrite the statement "That team always win whenever it rains or not" 

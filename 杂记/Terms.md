@@ -1,0 +1,26 @@
+- complete the square: 配方
+- quadratic: 二次方程
+- translation: 平移
+- objectives: 教学目标
+- infimum/supremum: 下/上确界
+- lower/upper bound: 下/上界
+- conjugate: 共轭 
+- direct propotion: 成正比 
+- recurrence relation: 递推关系
+- sequence:  数列
+- the formula of general term: 通项公式
+- endpoint: 端点
+- mathematical argument: 数学论证
+- diagonal: 对角线
+- problem-solving approach: 解题思路
+- substitute: 代入
+- numerator/denominator: 分子/分母
+- topology: 拓扑
+- formula: 公式
+- equation: 方程/等式
+- law/theorem/axiom: 定律/定理/公理
+- identical/unequal transformation: 恒等/不等变换
+- reciprocal: 倒数
+
+- prefix/infix/suffix: 前缀/中缀/后缀
+- colon: 冒号

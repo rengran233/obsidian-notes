@@ -1,0 +1,1 @@
+`System.arraycopy(new, index_new, old, index_old, length)`

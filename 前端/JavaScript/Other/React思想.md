@@ -1,0 +1,1 @@
+组件分析：现代推崇View（视图）+Hook（逻辑），以前推崇Container/Presenter

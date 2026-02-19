@@ -1,0 +1,2 @@
+1. Why can't use reference as a condition to judge whether a reference is `null` like C++, for example `if(!root)`
+- Java has strict type system doesn't allow implicit convert `0` to `boolean` like `0` to `bool` in C++

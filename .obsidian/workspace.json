@@ -165,8 +165,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a2a8bcd029e1d759",
+  "active": "dfd137f3ad28dfec",
   "lastOpenFiles": [
+    "新建 文本文档.txt",
     "数学/离散数学/图的连通性.md",
     "数学/离散数学/推理证明分析.md",
     "数学/离散数学/图的基本概念.md",
@@ -195,7 +196,6 @@
     "Java/throw 和 throws.md",
     "Java/wait()和notify().md",
     "公开课/UCB-CS61B/5. Generic and autoboxing.md",
-    "公开课/UCB-CS61B/4. Inheritance, Implements/4.2 Extends, Casting, HoFs.md",
     "计组/存储",
     "数据库",
     "公开课",

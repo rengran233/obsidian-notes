@@ -1,0 +1,1 @@
+mdx：markdown + JSX，可以在markdown中写组件

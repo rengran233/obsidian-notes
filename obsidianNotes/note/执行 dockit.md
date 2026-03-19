@@ -1,4 +1,7 @@
-#项目结构 
+---
+tags:
+  - 项目结构
+---
 
 ### 1. 入口脚本分析
 根据 `package.json`，`pnpm run dockit` 执行的是 `node ./script/run-dockit.js`。

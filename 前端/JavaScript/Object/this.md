@@ -1,3 +1,8 @@
+---
+tags:
+  - JavaScript
+---
+
 JS中的`this`是根据上下文计算出来的
 ```js
 let user = { name: "John" };

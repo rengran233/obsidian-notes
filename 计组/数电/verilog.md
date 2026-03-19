@@ -1,3 +1,8 @@
+---
+tags:
+  - Verilog
+---
+
 **赋值：**
 - wire连续赋值，reg过程赋值
 - wire、reg定义时赋值（连续赋值）

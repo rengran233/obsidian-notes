@@ -1,3 +1,8 @@
+---
+tags:
+  - Java
+---
+
 notify()会随机唤醒一个线程，容易引发信号丢失；而notifyAll()会唤醒所有线程，绝大多数情况下应该使用notifyAll()
 
 ---

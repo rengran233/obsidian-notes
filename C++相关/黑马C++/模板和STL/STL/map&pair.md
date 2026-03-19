@@ -1,3 +1,8 @@
+---
+tags:
+  - cpp
+---
+
 `pair`成对出现的数据，利用对组可以返回两个数据
 
 `pair<type, type> p ( value1, value2 );`
@@ -258,4 +263,3 @@ std::map<Point, std::string> pointMap;
 ---
 
 通过合理使用 `std::map`，可以高效管理需要按键排序的键值对数据。当需要更高性能的无序存储时，可考虑 `std::unordered_map`（哈希表实现）。
-

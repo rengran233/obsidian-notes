@@ -1,3 +1,8 @@
+---
+tags:
+  - JavaScript
+---
+
 ## 什么是JSON
 
 JSON stands for JavaScript Object Notation.
@@ -21,4 +26,3 @@ console.log(data["list of courses"]); // 这里必须用括号访问
 ## JS中的JSON处理
 
 JavaScript中有两种强大的方法用于处理JSON数据：`JSON.parse()` and `JSON.stringify()`。
-

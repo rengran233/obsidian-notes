@@ -1,4 +1,7 @@
-#项目结构
+---
+tags:
+  - 项目结构
+---
 
 执行`pnpm run story <component>`：根目录`package.json`
 ### 1. 触发链路

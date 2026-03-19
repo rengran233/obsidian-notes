@@ -1,3 +1,8 @@
+---
+tags:
+  - Vue
+---
+
 **透传 (Fallthrough Attributes)** 是 Vue 的一个特性，指：**父组件传给子组件，但子组件并没有在 `defineProps` 或 `defineEmits` 中声明的属性**。
 
 这些属性会自动“穿透”子组件的外壳，直接绑定到子组件的**根元素**上。

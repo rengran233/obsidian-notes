@@ -1,3 +1,8 @@
+---
+tags:
+  - cpp
+---
+
 new返回指针
 int \*p = new int(10) //10
 int \*p = new int\[10] //10数据数组

@@ -1,3 +1,8 @@
+---
+tags:
+  - Vue
+---
+
 在 React 中，“透传”通常指**Props Drilling**（属性钻取）或**Spread Attributes**（属性展开），与 Vue 的“自动透传”机制不同，React 的透传是**显式**且**手动**的。
 
 ### 1. 什么是 React 的透传？

@@ -1,3 +1,8 @@
+---
+tags:
+  - Vue
+---
+
 以下是关于 **Vue 3 Props (`defineProps`)** 的核心笔记整理，结合 React 视角，方便查阅。
 
 ---

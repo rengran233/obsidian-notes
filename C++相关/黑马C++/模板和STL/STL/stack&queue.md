@@ -1,3 +1,8 @@
+---
+tags:
+  - cpp
+---
+
 `stack`栈，先进后出
 构造函数：
 * `stack<T> stk;`                                 //stack采用模板类实现， stack对象的默认构造形式

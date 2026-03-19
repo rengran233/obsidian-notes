@@ -1,3 +1,8 @@
+---
+tags:
+  - Vue
+---
+
 在 `oc-banner` 组件中，将 `expanded` prop 的初始值定义为 `undefined` 是为了实现 **受控（Controlled）与非受控（Uncontrolled）混合模式** 的一种常见设计模式。
 
 这种设计让组件既能“开箱即用”，又能支持“外部完全控制”。

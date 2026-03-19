@@ -1,3 +1,8 @@
+---
+tags:
+  - JavaScript
+---
+
 JS中有三种`for`循环
 ```js
 for (let i = 0; i < 10; i += 1) {

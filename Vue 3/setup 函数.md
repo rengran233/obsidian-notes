@@ -1,3 +1,8 @@
+---
+tags:
+  - Vue
+---
+
 `setup()` 是 Vue 3 **Composition API (组合式 API)** 的核心入口。
 
 对于 React 开发者来说，`setup()` 函数**就相当于 React 函数组件的函数体**。它是所有逻辑（状态、副作用、计算属性）开始执行的地方。

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2c0191834942f31b",
+        "id": "8a713f9a7936a466",
         "type": "tabs",
         "children": [
           {
-            "id": "dd9745d4b1387378",
+            "id": "803e62d0abebb9d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "公开课/LangChain/week 01.md",
+                "file": "agent course.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "week 01"
+              "title": "agent course"
             }
           }
         ]
@@ -215,8 +215,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "dd9745d4b1387378",
+  "active": "803e62d0abebb9d2",
   "lastOpenFiles": [
+    "agent course.md",
+    "obsidianNotes/note/Git 操作.md",
+    "作业.md",
+    "Pasted image 20260325223205.png",
+    "Pasted image 20260325223222.png",
+    "Pasted image 20260325223142.png",
+    "POSIX支持度调研.md",
+    "Pasted image 20260325223137.png",
+    "公开课/LangChain/week 01.md",
     "算法作业.md",
     "Vue 3/图标与文字混排的基线处理.md",
     "Vue 3/动态样式.md",
@@ -224,7 +233,6 @@
     "Vue 3/监听 watch.md",
     "Vue 3/受控、非受控和混合组件.md",
     "Vue 3/引用类型默认值使用工厂函数.md",
-    "作业.md",
     "Vue 3/Vue 透传.md",
     "Vue 3/Vue 事件处理.md",
     "Vue 3/undefined 作为默认值的作用.md",
@@ -237,23 +245,15 @@
     "Vue 3/CSS 简写语法.md",
     "Vue 3/baseline 对齐.md",
     "temps/temp4.md",
-    "obsidianNotes/note/Git 操作.md",
     "obsidianNotes/note/macOS 快捷键.md",
     "temps/temp1.md",
-    "temps/temp2.md",
-    "公开课/LangChain/week 01.md",
     "公开课/LangChain",
-    "数据库/miniob/SQL.md",
     "复制粘贴的图片/Pasted image 20250610001704.png",
     "复制粘贴的图片/Pasted image 20250610105208.png",
     "复制粘贴的图片/Pasted image 20250610202143.png",
     "复制粘贴的图片/Pasted image 20250611011548.png",
     "复制粘贴的图片/Pasted image 20250611013530.png",
     "复制粘贴的图片/Pasted image 20250610204023.png",
-    "复制粘贴的图片/Pasted image 20250610104443.png",
-    "复制粘贴的图片/Pasted image 20250609235844.png",
-    "复制粘贴的图片/Pasted image 20250609201709.png",
-    "复制粘贴的图片/Pasted image 20250606163619.png",
     "Untitled.canvas",
     "日志",
     "中英术语对照"

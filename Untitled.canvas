@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"6a2346b70e3a8717","type":"text","text":"用户提示词","x":-260,"y":-100,"width":260,"height":50},
+		{"id":"ca702c1ee08bd514","type":"text","text":"系统提示词\n优先级更高","x":-500,"y":-420,"width":250,"height":60},
+		{"id":"625d27d000a5f2da","type":"text","text":"上下文信息","x":-59,"y":-355,"width":250,"height":60},
+		{"id":"6c83f011083ad3df","type":"text","text":"角色扮演 ","x":-59,"y":-520,"width":250,"height":60},
+		{"id":"cb7a25be2f674a46","x":-695,"y":-776,"width":250,"height":60,"type":"text","text":"产品思维"},
+		{"id":"1be60a0fd926d97e","x":-322,"y":-769,"width":250,"height":60,"type":"text","text":"整体框架"},
+		{"id":"89b81ebff33e5fc4","x":-1103,"y":-585,"width":250,"height":60,"type":"text","text":"提示词"},
+		{"id":"2a7175e170a900a2","x":-735,"y":-638,"width":250,"height":60,"type":"text","text":"核心目的：降低不确定性"}
+	],
+	"edges":[
+		{"id":"196765717a5d11b7","fromNode":"ca702c1ee08bd514","fromSide":"bottom","toNode":"6a2346b70e3a8717","toSide":"top","toEnd":"none"},
+		{"id":"b7b4f914a222f7be","fromNode":"ca702c1ee08bd514","fromSide":"right","toNode":"6c83f011083ad3df","toSide":"left"},
+		{"id":"df98b2a38e327132","fromNode":"ca702c1ee08bd514","fromSide":"right","toNode":"625d27d000a5f2da","toSide":"left"}
+	]
+}

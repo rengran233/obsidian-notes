@@ -4,21 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "8a713f9a7936a466",
+        "id": "7f244e23f7bfe890",
         "type": "tabs",
         "children": [
           {
-            "id": "803e62d0abebb9d2",
+            "id": "87a67807e1ec76ad",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/理财.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "理财"
+            }
+          },
+          {
+            "id": "6ef8d68682f34b46",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent course.md",
+                "file": "理财/银行存款.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "agent course"
+              "title": "银行存款"
             }
           }
         ]
@@ -196,11 +208,12 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 205.5
+    "width": 205.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,41 +225,48 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "803e62d0abebb9d2",
+  "active": "87a67807e1ec76ad",
   "lastOpenFiles": [
-    "agent course.md",
-    "obsidianNotes/note/Git 操作.md",
-    "作业.md",
+    "理财/银行存款.md",
+    "Excalidraw/理财.md",
+    "理财",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "temps/temp5.md",
+    "temps/temp3.md",
+    "英语/近义词辨析.md",
+    "英语/随记.md",
+    "英语/听力.md",
+    "英语/听写.md",
+    "英语/多义词辨析.md",
+    "SKILLS/多义词辨析.md",
+    "AGENTS.md",
+    "SKILLS",
+    "垃圾/Tomatos.md",
+    "垃圾/Log.md",
+    "方向/竞赛.md",
+    "obsidianNotes/note/日报.md",
+    "obsidianNotes/note/aaa.md",
+    "Anthropic Prompt Engineer/10.3 retrieval.md",
+    "Anthropic Prompt Engineer/10.2 tool-use.md",
+    "Anthropic Prompt Engineer/10.1 chaining.md",
+    "Memorandum.md",
+    "Excalidraw/Drawing 2026-04-02 21.03.45.excalidraw.md",
+    "Excalidraw/Drawing 2026-04-02 20.31.46.excalidraw.md",
+    "Excalidraw/Drawing 2026-04-02 20.27.21.excalidraw.md",
+    "Excalidraw/Drawing 2026-04-02 19.34.25.excalidraw.md",
+    "Excalidraw",
+    "Anthropic Prompt Engineer/02 clear.md",
+    "TAGS.md",
+    "Anthropic Prompt Engineer",
     "Pasted image 20260325223205.png",
     "Pasted image 20260325223222.png",
     "Pasted image 20260325223142.png",
-    "POSIX支持度调研.md",
     "Pasted image 20260325223137.png",
-    "公开课/LangChain/week 01.md",
-    "算法作业.md",
-    "Vue 3/图标与文字混排的基线处理.md",
-    "Vue 3/动态样式.md",
-    "Vue 3/分析.md",
-    "Vue 3/监听 watch.md",
-    "Vue 3/受控、非受控和混合组件.md",
-    "Vue 3/引用类型默认值使用工厂函数.md",
-    "Vue 3/Vue 透传.md",
-    "Vue 3/Vue 事件处理.md",
-    "Vue 3/undefined 作为默认值的作用.md",
-    "Vue 3/setup 函数.md",
-    "Vue 3/ref 和 reactive 对比.md",
-    "Vue 3/React 透传.md",
-    "Vue 3/props.md",
-    "Vue 3/CSS 选择器.md",
-    "Vue 3/CSS 数值单位.md",
-    "Vue 3/CSS 简写语法.md",
-    "Vue 3/baseline 对齐.md",
-    "temps/temp4.md",
-    "obsidianNotes/note/macOS 快捷键.md",
-    "temps/temp1.md",
     "公开课/LangChain",
     "复制粘贴的图片/Pasted image 20250610001704.png",
     "复制粘贴的图片/Pasted image 20250610105208.png",
@@ -254,7 +274,6 @@
     "复制粘贴的图片/Pasted image 20250611011548.png",
     "复制粘贴的图片/Pasted image 20250611013530.png",
     "复制粘贴的图片/Pasted image 20250610204023.png",
-    "Untitled.canvas",
     "日志",
     "中英术语对照"
   ]

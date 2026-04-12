@@ -1,0 +1,22 @@
+`git`的修改规则：基于`A -> B`，如果有两次提交`A -> B`, `B -> C`，然后交换其顺序，`git`会尝试覆盖`B -> C`，但是此时该代码块还是`A`，所以会出现问题
+- 合并多个commit保持提交历史的整洁
+	- `git rebase -i`修改为`sqush`标签将某次提交合并到其父提交
+	- `git reset --soft`将前几次提交回退到暂存区统一提交
+- 使用`git reset --hard`回退多了
+	- `git reflog`查看操作历史并回退到操作前
+- 修改分支名并推送到远端
+- 删除分支
+	- `git branch -D`
+- 新建分支
+	- `git branch`
+	- 新建分支并移动`git checkout -b`
+- 如果将一个已经被合并入基准分支的开发分支rebase到基准分支上，会发生什么
+- 修改历史提交，但不想先弄脏工作区
+	- `git rebase -i`
+- 抛弃工作区未暂存的内容
+	- `git restore .`
+- 将工作区某文件的局部更改撤销
+	- `git restore -p`
+	- 将历史提交局部撤销`git restore -p <id>^ <路径>`
+- 想要整理一个有多次提交的分支
+	- 可以先原地新建一个`temp`分支，然后用`git reset --hard`将本分支回退到修改前，然后用`git cherry-pick`从`temp`分支中拣取提交

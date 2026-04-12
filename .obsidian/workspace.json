@@ -4,33 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7f244e23f7bfe890",
+        "id": "043207caf8f9bbfd",
         "type": "tabs",
         "children": [
           {
-            "id": "87a67807e1ec76ad",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/理财.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "理财"
-            }
-          },
-          {
-            "id": "6ef8d68682f34b46",
+            "id": "e3678d988845bb75",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "理财/银行存款.md",
+                "file": "note/Git 操作.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "银行存款"
+              "title": "Git 操作"
             }
           }
         ]
@@ -229,39 +217,40 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "87a67807e1ec76ad",
+  "active": "e3678d988845bb75",
   "lastOpenFiles": [
-    "理财/银行存款.md",
-    "Excalidraw/理财.md",
-    "理财",
-    "Untitled 1.canvas",
-    "Untitled.canvas",
-    "temps/temp5.md",
-    "temps/temp3.md",
-    "英语/近义词辨析.md",
-    "英语/随记.md",
-    "英语/听力.md",
-    "英语/听写.md",
-    "英语/多义词辨析.md",
-    "SKILLS/多义词辨析.md",
+    "Question list.md",
     "AGENTS.md",
-    "SKILLS",
-    "垃圾/Tomatos.md",
-    "垃圾/Log.md",
-    "方向/竞赛.md",
-    "obsidianNotes/note/日报.md",
-    "obsidianNotes/note/aaa.md",
-    "Anthropic Prompt Engineer/10.3 retrieval.md",
-    "Anthropic Prompt Engineer/10.2 tool-use.md",
-    "Anthropic Prompt Engineer/10.1 chaining.md",
+    "agent course.md",
     "Memorandum.md",
+    "公开课/Deep Learning/neuro.md",
+    "Excalidraw/理财.md",
+    "公开课/Deep Learning",
+    "temps/temp4.md",
+    "理财/银行存款.md",
+    "中英术语对照/机器学习&深度学习.md",
+    "待测试组件.md",
+    "Anthropic Prompt Engineer/09 complex-prompts.md",
+    "temps/temp2.md",
+    "Excalidraw/Drawing 2026-04-02 19.34.25.excalidraw.md",
+    "Excalidraw/Drawing 2026-04-02 20.27.21.excalidraw.md",
     "Excalidraw/Drawing 2026-04-02 21.03.45.excalidraw.md",
     "Excalidraw/Drawing 2026-04-02 20.31.46.excalidraw.md",
-    "Excalidraw/Drawing 2026-04-02 20.27.21.excalidraw.md",
-    "Excalidraw/Drawing 2026-04-02 19.34.25.excalidraw.md",
+    "Untitled.canvas",
+    "TODOS.md",
+    "群聊信息.md",
+    "算法作业.md",
+    "temps/temp1.md",
+    "temps/temp3.md",
+    "temps/temp5.md",
+    "作业.md",
+    "理财/基金费用与A类C类.md",
+    "理财",
+    "Untitled 1.canvas",
+    "英语/近义词辨析.md",
+    "英语/随记.md",
+    "SKILLS",
     "Excalidraw",
-    "Anthropic Prompt Engineer/02 clear.md",
-    "TAGS.md",
     "Anthropic Prompt Engineer",
     "Pasted image 20260325223205.png",
     "Pasted image 20260325223222.png",

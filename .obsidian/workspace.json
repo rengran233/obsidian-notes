@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "temp2"
             }
-          },
-          {
-            "id": "c0ab02a3d6dcd671",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.12.7"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -230,7 +217,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c0ab02a3d6dcd671",
+  "active": "e3678d988845bb75",
   "lastOpenFiles": [
     "数据库/miniob/命令解析.md",
     "C++相关/黑马C++/类&对象/运算符重载/类型转换.md",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temps/temp2.md",
+                "file": "temps/temp1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "temp2"
+              "title": "temp1"
             }
           }
         ]
@@ -219,6 +219,13 @@
   },
   "active": "e3678d988845bb75",
   "lastOpenFiles": [
+    "temps/temp2.md",
+    "temps/temp3.md",
+    "temps/temp4.md",
+    "temps/temp5.md",
+    "temps/temp1.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
     "数据库/miniob/命令解析.md",
     "C++相关/黑马C++/类&对象/运算符重载/类型转换.md",
     "数据库/miniob/更新日志.md",
@@ -230,25 +237,18 @@
     "Memorandum.md",
     "公开课/Deep Learning/neuro.md",
     "公开课/Deep Learning",
-    "temps/temp4.md",
     "理财/银行存款.md",
     "中英术语对照/机器学习&深度学习.md",
     "待测试组件.md",
     "Anthropic Prompt Engineer/09 complex-prompts.md",
-    "temps/temp2.md",
     "Excalidraw/Drawing 2026-04-02 19.34.25.excalidraw.md",
     "Excalidraw/Drawing 2026-04-02 20.27.21.excalidraw.md",
     "Excalidraw/Drawing 2026-04-02 21.03.45.excalidraw.md",
     "Excalidraw/Drawing 2026-04-02 20.31.46.excalidraw.md",
-    "Untitled.canvas",
     "TODOS.md",
     "群聊信息.md",
     "算法作业.md",
-    "temps/temp1.md",
-    "temps/temp3.md",
-    "temps/temp5.md",
     "理财",
-    "Untitled 1.canvas",
     "SKILLS",
     "Excalidraw",
     "Anthropic Prompt Engineer",

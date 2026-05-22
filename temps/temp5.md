@@ -1,242 +1,42 @@
-# 算法设计与分析第七章贪心算法作业解答
 
-## 7.1货币兑换的贪心算法
 
-硬币面值为100,25,10,5,1。要使兑换$y$分时所用硬币数最少，只需始终优先取当前不超过剩余金额的最大面值硬币。
-
-### 算法思想
-按100→25→10→5→1的顺序依次取硬币。
-
-### 伪代码
-```text
-GreedyChange(y):
-    c100 = y div 100
-    y = y mod 100
-    c25 = y div 25
-    y = y mod 25
-    c10 = y div 10
-    y = y mod 10
-    c5 = y div 5
-    c1 = y mod 5
-    return (c100,c25,c10,c5,c1)
-```
-
-### 正确性说明
-设某个最优解中各种硬币数量分别为$x_{100},x_{25},x_{10},x_5,x_1$。
-
-- 不可能有5枚1分硬币，否则可用1枚5分硬币替换，硬币总数更少。
-- 不可能有2枚5分硬币，否则可用1枚10分硬币替换，硬币总数更少。
-- 不可能有3枚10分硬币，因为30分可替换为25分+5分，只需2枚硬币。
-- 不可能有4枚25分硬币，因为100分可替换为1枚1元硬币。
-
-因此，在任一最优解中：
-
-- 1元硬币数必为$\lfloor y/100\rfloor$；
-- 去掉1元后，25分硬币数必为$\lfloor r/25\rfloor$；
-- 再去掉25分后，10分硬币数必为$\lfloor r/10\rfloor$；
-- 最后剩余部分显然只能由5分和1分按贪心方式唯一确定。
-
-所以，按面值从大到小依次选取的贪心算法得到的就是最优解。
-
-### 复杂度分析
-硬币种类数固定为5种，因此时间复杂度为$O(1)$，空间复杂度为$O(1)$。
-
----
-
-## 7.3面值为2的幂时的兑换算法
-
-硬币面值为$1,2,4,8,\ldots,2^k$，且$y<2^{k+1}$。这时最优兑换就是把$y$写成二进制。
-
-### 算法思想
-若
-
-```text
-y = b_k·2^k + b_(k-1)·2^(k-1) + ... + b_1·2 + b_0
-```
-
-其中每个$b_i\in\{0,1\}$，那么当$b_i=1$时取1枚面值$2^i$的硬币；当$b_i=0$时不取。这样得到的硬币数最少。
-
-### 伪代码
-```text
-BinaryChange(y):
-    i = 0
-    while y > 0:
-        c[i] = y mod 2
-        y = y div 2
-        i = i + 1
-    return c
-```
-
-### 正确性说明
-因为每种硬币面值都是前一种的2倍，若某个解中有2枚$2^i$硬币，就可合并为1枚$2^{i+1}$硬币，硬币总数减少1。因此最优解中每种面值的硬币至多取1枚，这正好对应$y$的二进制表示，所以该算法最优。
-
-### 复杂度分析
-循环次数等于$y$的二进制位数，为$\lfloor \log_2 y\rfloor+1$，因此时间复杂度为$O(\log y)$，也就是题目要求的对数量级时间复杂度。
-
----
-
-## 7.5顶点覆盖贪心算法不是总最优
-
-构造下面这个反例。
-
-### 反例图
-顶点集合为
-
-```text
-V={u,v1,v2,v3,w1,w2,w3}
-```
-
-边集合为
-
-```text
-E={(u,v1),(u,v2),(u,v3),(v1,w1),(v2,w2),(v3,w3)}
-```
-
-图的结构可以理解为：$u$连接到$v_1,v_2,v_3$，而每个$v_i$再各自连接一个$w_i$。
-
-### 贪心算法的执行结果
-初始时各点度数为：
-
-- $\deg(u)=3$
-- $\deg(v_1)=\deg(v_2)=\deg(v_3)=2$
-- $\deg(w_1)=\deg(w_2)=\deg(w_3)=1$
-
-所以贪心算法首先选择$u$，并删除边$(u,v_1),(u,v_2),(u,v_3)$。
-
-剩余的边为
-
-```text
-(v1,w1),(v2,w2),(v3,w3)
-```
-
-此时还必须再从每条边中至少选一个端点，因此至少还要选3个顶点。于是该贪心算法得到的顶点覆盖大小至少为4。
-
-例如它可能得到：
-
-```text
-S_g={u,v1,v2,v3}
-```
-
-### 最优解
-实际上，集合
-
-```text
-S*={v1,v2,v3}
-```
-
-已经覆盖了全部边：
-
-- 它覆盖了$(u,v_1),(u,v_2),(u,v_3)$
-- 也覆盖了$(v_1,w_1),(v_2,w_2),(v_3,w_3)$
-
-因此最小顶点覆盖大小至多为$3$，而贪心算法得到$4$。
-
-### 结论
-该贪心算法并不总能得到最小尺寸的顶点覆盖。
-
----
-
-## 7.29HUFFMAN最优编码
-
-字符频度如下：
-
-| 字符 | a | b | c | d | e | f |
-|---|---:|---:|---:|---:|---:|---:|
-| 频度 | 7 | 5 | 3 | 2 | 12 | 9 |
-
-### 构造过程
-每次取频度最小的两个结点合并：
-
-1. d(2)与c(3)合并，得到结点N1(5)
-2. b(5)与N1(5)合并，得到结点N2(10)
-3. a(7)与f(9)合并，得到结点N3(16)
-4. N2(10)与e(12)合并，得到结点N4(22)
-5. N3(16)与N4(22)合并，得到根结点(38)
-
-约定左分支记为0，右分支记为1，则可得到一组最优编码：
-
-| 字符 | 编码 |
-|---|---|
-| a | 00 |
-| f | 01 |
-| b | 100 |
-| d | 1010 |
-| c | 1011 |
-| e | 11 |
-
-### 对应的Huffman树
-```text
-                (38)
-              /      \
-           (16)      (22)
-          /   \      /   \
-       a(7)  f(9) (10)  e(12)
-                  /   \
-                b(5)  (5)
-                      / \
-                    d(2) c(3)
-```
-
-### 说明
-由于频度相同的结点在合并时左右位置可以互换，所以最优编码不唯一；只要编码长度分布相同，得到的都是最优Huffman编码。
-
----
-
-## 7.32黑点与白点的最大匹配
-
-### 贪心思路
-把黑点按$x$坐标从小到大排序，同时把白点也按$x$坐标从小到大排序。然后从左到右扫描黑点。
-
-当处理黑点$b=(x_b,y_b)$时，把所有满足$x_w\le x_b$且尚未加入候选集的白点加入候选结构。此时这些白点在$x$方向上都已经可能与当前黑点或后面的黑点匹配。
-
-为了使后面的黑点尽量保留更多选择，当前黑点应当匹配“在$y$方向上尽可能大但仍不超过$y_b$”的那个白点。这样可以把更小的$y$值白点留给以后$y$更小的黑点。
-
-### 数据结构
-使用两部分结构：
-
-- 一个按$x$升序扫描白点的指针，用于把满足$x_w\le x_b$的白点加入候选集；
-- 一个按$y$维护的有序优先结构，用于快速找出“不超过$y_b$的最大$y_w$”。该结构可用平衡二叉搜索树实现；若实现层面只允许堆，也可用“堆+延迟删除”的方式完成同样的操作。
-
-### 伪代码
-```text
-MaxMatch(B,W):
-    将黑点按x升序排序
-    将白点按x升序排序
-    T = 空的按y有序的候选集
-    j = 1
-    M = 空集
-
-    for 每个黑点b=(xb,yb):
-        while j≤n且W[j].x≤xb:
-            将W[j]按其y值插入T
-            j = j + 1
-
-        在T中找y≤yb的最大白点w
-        if w存在:
-            将(b,w)加入M
-            从T中删除w
-
-    return M
-```
-
-### 正确性说明
-设当前处理到黑点b。
-
-- 所有$x_w\le x_b$的白点都已经进入候选集，其他白点由于$x$过大，不可能与$b$匹配。
-- 若当前可匹配的白点中存在两个$w_1,w_2$，且$y_{w_1}<y_{w_2}\le y_b$，那么把$b$匹配给$w_2$不会比匹配给$w_1$更差。因为$w_1$的$y$更小，它能匹配的后继黑点集合不少于$w_2$能匹配的后继黑点集合，所以留下$w_1$只会使后续选择更灵活。
-- 因此，对每个黑点选择“$y$不超过它的最大白点”是安全的贪心选择。
-
-由交换论证可知，经过这一选择后，剩余子问题仍保持最优，因此整个算法得到最大匹配。
-
-### 复杂度分析
-排序需要$O(n\log n)$。每个白点最多插入一次、每个匹配点最多删除一次，每次操作代价为$O(\log n)$，因此总时间复杂度为$O(n\log n)$，空间复杂度为$O(n)$。
-
----
-
-## 本次作业结论汇总
-
-- 7.1：按100→25→10→5→1依次取硬币的贪心算法最优。
-- 7.3：把兑换金额写成二进制即可，时间复杂度为$O(\log y)$。
-- 7.5：最高度优先的顶点覆盖贪心算法不一定最优，题中反例最优解大小为$3$而贪心会得到$4$。
-- 7.29：一组最优Huffman编码为$a:00$，$f:01$，$b:100$，$d:1010$，$c:1011$，$e:11$。
-- 7.32：按$x$升序扫描黑点，并在候选白点中贪心选择满足$y$约束的最大$y$白点，可在$O(n\log n)$时间内求得最大匹配。
+| 组件名称 | 点击关闭按钮埋点 | 展示结果页埋点 |
+|---|---|---|
+| `promotion-batch-edit-bid-budget` | `- xxxx__promotionBatchEditBidBudget__promotionBatchEditModal_close`<br>`- 压缩：xxxx__307433708_close` | `- xxxx__promotionBatchEditBidBudget__promotionBatchEditModal_result`<br>`- 压缩：xxxx__307433708_result` |
+| `promotion-batch-edit-age` | `- xxxx__promotionBatchEditAge__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1183806863_close` | `- xxxx__promotionBatchEditAge__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1183806863_result` |
+| `promotion-batch-edit-appoint-laungth` | `- xxxx__promotionBatchEditAppointLaungth__promotionBatchEditModal_close`<br>`- 压缩：xxxx_799279648_close` | `- xxxx__promotionBatchEditAppointLaungth__promotionBatchEditModal_result`<br>`- 压缩：xxxx_799279648_result` |
+| `promotion-batch-edit-audience-package` | `- xxxx__promotionBatchEditAudiencePackage__promotionBatchEditModal_close`<br>`- 压缩：xxxx_909712084_close` | `- xxxx__promotionBatchEditAudiencePackage__promotionBatchEditModal_result`<br>`- 压缩：xxxx_909712084_result` |
+| `promotion-batch-edit-date` | `- xxxx__promotionBatchEditDate__promotionBatchEditModal_close`<br>`- 压缩：xxxx_467111682_close` | `- xxxx__promotionBatchEditDate__promotionBatchEditModal_result`<br>`- 压缩：xxxx_467111682_result` |
+| `promotion-batch-edit-delivery-duration` | `- xxxx__promotionBatchEditDeliveryDuration__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1583449348_close` | `- xxxx__promotionBatchEditDeliveryDuration__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1583449348_result` |
+| `promotion-batch-edit-district` | `- xxxx__promotionBatchEditDistrict__promotionBatchEditModal_close`<br>`- 压缩：xxxx_149107298_close` | `- xxxx__promotionBatchEditDistrict__promotionBatchEditModal_result`<br>`- 压缩：xxxx_149107298_result` |
+| `promotion-batch-edit-match-type` | `- xxxx__promotionBatchEditMatchType__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1511028527_close` | `- xxxx__promotionBatchEditMatchType__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1511028527_result` |
+| `promotion-batch-edit-negative-words` | `- xxxx__promotionBatchEditNegativeWords__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1131825690_close` | `- xxxx__promotionBatchEditNegativeWords__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1131825690_result` |
+| `promotion-batch-edit-price` | `- xxxx__promotionBatchEditPrice__promotionBatchEditModal_close`<br>`- 压缩：xxxx_1044049531_close` | `- xxxx__promotionBatchEditPrice__promotionBatchEditModal_result`<br>`- 压缩：xxxx_1044049531_result` |
+| `promotion-batch-edit-radio-group` | `- xxxx__promotionBatchEditRadioGroup__promotionBatchEditModal_close`<br>`- 压缩：xxxx__31215016_close` | `- xxxx__promotionBatchEditRadioGroup__promotionBatchEditModal_result`<br>`- 压缩：xxxx__31215016_result` |
+| `promotion-batch-edit-ratio` | `- xxxx__promotionBatchEditRatio__promotionBatchEditModal_close`<br>`- 压缩：xxxx_85245629_close` | `- xxxx__promotionBatchEditRatio__promotionBatchEditModal_result`<br>`- 压缩：xxxx_85245629_result` |
+| `promotion-batch-edit-roi-goal` | `- xxxx__promotionBatchEditRoiGoal__promotionBatchEditModal_close`<br>`- 压缩：xxxx_1889407217_close` | `- xxxx__promotionBatchEditRoiGoal__promotionBatchEditModal_result`<br>`- 压缩：xxxx_1889407217_result` |
+| `promotion-batch-edit-schedule` | `- xxxx__promotionBatchEditSchedule__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1730058197_close` | `- xxxx__promotionBatchEditSchedule__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1730058197_result` |
+| `promotion-batch-operation-bar` | `- xxxx__promotionBatchOperationBar__promotionBatchEditModal_close`<br>`- 压缩：xxxx_463081174_close` | `- xxxx__promotionBatchOperationBar__promotionBatchEditModal_result`<br>`- 压缩：xxxx_463081174_result` |
+| `promotion-batch-revive-delivery` | `- xxxx__promotionBatchrReviveDelivery__promotionBatchEditModal_close`<br>`- 压缩：xxxx_811921655_close` | `- xxxx__promotionBatchrReviveDelivery__promotionBatchEditModal_result`<br>`- 压缩：xxxx_811921655_result` |
+| `promotion-batch-edit-modal` | `- xxxx__promotionBatchEditModal_close`<br>`- 压缩：xxxx_158918035_close` | `- xxxx__promotionBatchEditModal_result`<br>`- 压缩：xxxx_158918035_result` |
+
+
+| 组件名称 | 点击关闭按钮埋点 | 展示结果页埋点 |
+|---|---|---|
+| `promotion-batch-edit-bid-budget` | `- xxxx__promotionBatchEditBidBudget__promotionBatchEditModal_close`<br>`- 压缩：xxxx__307433708_close` | `- xxxx__promotionBatchEditBidBudget__promotionBatchEditModal_result`<br>`- 压缩：xxxx__307433708_result` |
+| `promotion-batch-edit-age` | `- xxxx__promotionBatchEditAge__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1183806863_close` | `- xxxx__promotionBatchEditAge__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1183806863_result` |
+| `promotion-batch-edit-appoint-laungth` | `- xxxx__promotionBatchEditAppointLaungth__promotionBatchEditModal_close`<br>`- 压缩：xxxx_799279648_close` | `- xxxx__promotionBatchEditAppointLaungth__promotionBatchEditModal_result`<br>`- 压缩：xxxx_799279648_result` |
+| `promotion-batch-edit-audience-package` | `- xxxx__promotionBatchEditAudiencePackage__promotionBatchEditModal_close`<br>`- 压缩：xxxx_909712084_close` | `- xxxx__promotionBatchEditAudiencePackage__promotionBatchEditModal_result`<br>`- 压缩：xxxx_909712084_result` |
+| `promotion-batch-edit-date` | `- xxxx__promotionBatchEditDate__promotionBatchEditModal_close`<br>`- 压缩：xxxx_467111682_close` | `- xxxx__promotionBatchEditDate__promotionBatchEditModal_result`<br>`- 压缩：xxxx_467111682_result` |
+| `promotion-batch-edit-delivery-duration` | `- xxxx__promotionBatchEditDeliveryDuration__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1583449348_close` | `- xxxx__promotionBatchEditDeliveryDuration__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1583449348_result` |
+| `promotion-batch-edit-district` | `- xxxx__promotionBatchEditDistrict__promotionBatchEditModal_close`<br>`- 压缩：xxxx_149107298_close` | `- xxxx__promotionBatchEditDistrict__promotionBatchEditModal_result`<br>`- 压缩：xxxx_149107298_result` |
+| `promotion-batch-edit-match-type` | `- xxxx__promotionBatchEditMatchType__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1511028527_close` | `- xxxx__promotionBatchEditMatchType__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1511028527_result` |
+| `promotion-batch-edit-negative-words` | `- xxxx__promotionBatchEditNegativeWords__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1131825690_close` | `- xxxx__promotionBatchEditNegativeWords__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1131825690_result` |
+| `promotion-batch-edit-price` | `- xxxx__promotionBatchEditPrice__promotionBatchEditModal_close`<br>`- 压缩：xxxx_1044049531_close` | `- xxxx__promotionBatchEditPrice__promotionBatchEditModal_result`<br>`- 压缩：xxxx_1044049531_result` |
+| `promotion-batch-edit-radio-group` | `- xxxx__promotionBatchEditRadioGroup__promotionBatchEditModal_close`<br>`- 压缩：xxxx__31215016_close` | `- xxxx__promotionBatchEditRadioGroup__promotionBatchEditModal_result`<br>`- 压缩：xxxx__31215016_result` |
+| `promotion-batch-edit-ratio` | `- xxxx__promotionBatchEditRatio__promotionBatchEditModal_close`<br>`- 压缩：xxxx_85245629_close` | `- xxxx__promotionBatchEditRatio__promotionBatchEditModal_result`<br>`- 压缩：xxxx_85245629_result` |
+| `promotion-batch-edit-roi-goal` | `- xxxx__promotionBatchEditRoiGoal__promotionBatchEditModal_close`<br>`- 压缩：xxxx_1889407217_close` | `- xxxx__promotionBatchEditRoiGoal__promotionBatchEditModal_result`<br>`- 压缩：xxxx_1889407217_result` |
+| `promotion-batch-edit-schedule` | `- xxxx__promotionBatchEditSchedule__promotionBatchEditModal_close`<br>`- 压缩：xxxx__1730058197_close` | `- xxxx__promotionBatchEditSchedule__promotionBatchEditModal_result`<br>`- 压缩：xxxx__1730058197_result` |
+| `promotion-batch-operation-bar` | `- xxxx__promotionBatchOperationBar__promotionBatchEditModal_close`<br>`- 压缩：xxxx_463081174_close` | `- xxxx__promotionBatchOperationBar__promotionBatchEditModal_result`<br>`- 压缩：xxxx_463081174_result` |
+| `promotion-batch-revive-delivery` | `- xxxx__promotionBatchrReviveDelivery__promotionBatchEditModal_close`<br>`- 压缩：xxxx_811921655_close` | `- xxxx__promotionBatchrReviveDelivery__promotionBatchEditModal_result`<br>`- 压缩：xxxx_811921655_result` |
+| `promotion-batch-edit-modal` | `- xxxx__promotionBatchEditModal_close`<br>`- 压缩：xxxx_158918035_close` | `- xxxx__promotionBatchEditModal_result`<br>`- 压缩：xxxx_158918035_result` |

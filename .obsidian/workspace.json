@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "043207caf8f9bbfd",
+        "id": "ee6dcd1bf6288a4f",
         "type": "tabs",
         "children": [
           {
-            "id": "e3678d988845bb75",
+            "id": "b77aadebfa244a31",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "temps/temp5.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "temp5"
+              "title": "新标签页"
             }
           }
         ]
@@ -217,16 +213,26 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "e3678d988845bb75",
+  "active": "b77aadebfa244a31",
   "lastOpenFiles": [
-    "temps/temp5.md",
-    "temps/temp1.md",
-    "temps/temp2.md",
     "temps/temp3.md",
-    "Question list.md",
-    "Untitled 1.canvas",
-    "Untitled.canvas",
     "temps/temp4.md",
+    "temps/temp2.md",
+    "Pasted image 20260529145910.png",
+    "Pasted image 20260528214240.png",
+    "Pasted image 20260528213950.png",
+    "Pasted image 20260528213947.png",
+    "Pasted image 20260528213248.png",
+    "Pasted image 20260528170556.png",
+    "Pasted image 20260528160352.png",
+    "temps/temp1.md",
+    "Pasted image 20260528145143.png",
+    "Pasted image 20260528144242.png",
+    "Pasted image 20260528143209.png",
+    "Untitled 1.canvas",
+    "temps/temp5.md",
+    "Question list.md",
+    "Untitled.canvas",
     "数据库/miniob/命令解析.md",
     "C++相关/黑马C++/类&对象/运算符重载/类型转换.md",
     "数据库/miniob/更新日志.md",
@@ -251,17 +257,7 @@
     "SKILLS",
     "Excalidraw",
     "Anthropic Prompt Engineer",
-    "Pasted image 20260325223205.png",
-    "Pasted image 20260325223222.png",
-    "Pasted image 20260325223142.png",
-    "Pasted image 20260325223137.png",
     "公开课/LangChain",
-    "复制粘贴的图片/Pasted image 20250610001704.png",
-    "复制粘贴的图片/Pasted image 20250610105208.png",
-    "复制粘贴的图片/Pasted image 20250610202143.png",
-    "复制粘贴的图片/Pasted image 20250611011548.png",
-    "复制粘贴的图片/Pasted image 20250611013530.png",
-    "复制粘贴的图片/Pasted image 20250610204023.png",
     "日志",
     "中英术语对照"
   ]

@@ -24,26 +24,6 @@
 test-detect误报
 test-detect无法正确处理单引号字符串
 
-## oc-select
-存量情况
-![[Pasted image 20260528214240.png]]
-补测前
-![[Pasted image 20260528213950.png]]
-增量补测
-![[Pasted image 20260528213248.png]]
-增量补测且附有需求方案
-6m 40s
-全量补测
-![[Pasted image 20260529145910.png]]
-12m 3s（存在提问耗时）
-#### 补充细节
-- 未覆盖点 1：“过滤结果为空时，全选状态直接返回 none ”这条分支没测到。 550
-	- 增量、带方案增量均未覆盖，全量覆盖
-	- 需求方案描述：`禁用项和 disabledValues 仍然不能被选中`
-- 未覆盖点 2：渲染里有一个三元分支只命中了一侧，实际缺的是 isValidText ? 'default' : 'secondary' 的另一侧，也就是 secondary 那条分支没覆盖到。 68-75
-	- `v-else-if`导致的不可达分支
-
-
 
 ## create-select-ies
 #### 本轮待补行为
@@ -68,20 +48,14 @@ test-detect无法正确处理单引号字符串
 - 补测后情况
 ![[Pasted image 20260527113912.png]]
 #### 补充细节
-补过的场景
-- 额外操作行渲染与按行过滤
-  - 验证 showExtraRow 传入数组时，只在命中的行下方渲染额外行
-  - 验证 extraClass.extraRow 和 extraClass.extraTd 能正确挂到额外行/单元格上
-  - 验证 extraColspan 的合并列效果是否生效
-- 额外操作行事件透传
-  - 验证 extra-row-click
-  - 验证 extra-row-mouseenter
-  - 验证 extra-row-mouseleave
-  - 顺带验证点击额外操作行时，不会误触发普通 row-click
-补测目的
-- 覆盖这次提交新增的“数据行下方额外操作行”渲染能力
-- 覆盖新增的 3 个额外行事件
-- 补齐额外行和普通数据行之间的行为边界
+已测试功能
+- showExtraRow 数组模式：只为命中的行展示额外操作行，未命中的行不展示，见 oc-table.test.ts 。
+- renderExtraRowCell ：额外操作行能按列配置渲染自定义内容，见 oc-table.test.ts 。
+- extraColspan ：额外操作行单元格支持合并列，已断言 colspan="2" ，见 oc-table.test.ts 。
+- extraClass ：额外 tr 和额外 td 都能透传 class，见 oc-table.test.ts 。
+- 结构兼容性：额外操作行与展开列、选择列、固定列共存时仍能正确渲染占位和内容，见 oc-table.test.ts 。
+- showExtraRow: true ：所有数据行都展示额外操作行，见 oc-table.test.ts 。
+- extraRowClick 、 extraRowMouseenter 、 extraRowMouseleave ：三个新增事件都已验证，且断言了 rowData.id 与 rowIndex ，见 oc-table.test.ts 。
 未覆盖问题：
 - 空态区域存在时同时 loading === true
 #### 结论
@@ -128,7 +102,7 @@ AI有能力补全组件单测覆盖，但是在增量模式下对于代码中需
 test: PromotionStatusCard 增加底部插槽:  小
 1a4baa6ee80fe06dd7620017affdfbec47e23df3
 
-test: cSelect 搜索后全选只作用于当前过滤结果 小
+test: OcSelect 搜索后全选只作用于当前过滤结果 小
 38badfeb9cac9bce3bceea95936d9dc8ab755261
 
 test: CreateSelectIes 优化展开重拉、分页重置和 reset 竞态 中

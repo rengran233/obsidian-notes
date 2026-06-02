@@ -11,10 +11,14 @@
             "id": "b77aadebfa244a31",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "temps/temp2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "temp2"
             }
           }
         ]
@@ -215,6 +219,7 @@
   },
   "active": "b77aadebfa244a31",
   "lastOpenFiles": [
+    "Pasted image 20260601151412.png",
     "temps/temp3.md",
     "temps/temp4.md",
     "temps/temp2.md",

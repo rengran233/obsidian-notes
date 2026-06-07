@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temps/temp2.md",
+                "file": "temps/temp1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "temp2"
+              "title": "temp1"
             }
           }
         ]
@@ -219,10 +219,10 @@
   },
   "active": "b77aadebfa244a31",
   "lastOpenFiles": [
+    "temps/temp2.md",
     "Pasted image 20260601151412.png",
     "temps/temp3.md",
     "temps/temp4.md",
-    "temps/temp2.md",
     "Pasted image 20260529145910.png",
     "Pasted image 20260528214240.png",
     "Pasted image 20260528213950.png",
@@ -233,7 +233,6 @@
     "temps/temp1.md",
     "Pasted image 20260528145143.png",
     "Pasted image 20260528144242.png",
-    "Pasted image 20260528143209.png",
     "Untitled 1.canvas",
     "temps/temp5.md",
     "Question list.md",

@@ -1,41 +1,56 @@
 {
   "main": {
-    "id": "36e979a510ecf4ee",
+    "id": "c65bdb80653560f5",
     "type": "split",
     "children": [
       {
-        "id": "1bb39eef030215fb",
+        "id": "08a2fa67079efaff",
         "type": "tabs",
         "children": [
           {
-            "id": "3a9f1953e6a25ee7",
+            "id": "a2a8bcd029e1d759",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temps/temp2.md",
+                "file": "TODOS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "temp2"
+              "title": "TODOS"
+            }
+          },
+          {
+            "id": "84eaa0edfa226582",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "7f499ed849da7975",
+    "id": "74b54af4456cb859",
     "type": "split",
     "children": [
       {
-        "id": "474c3aa826cf6ec0",
+        "id": "8f0bb9918d1d2ad9",
         "type": "tabs",
         "children": [
           {
-            "id": "14a5d6dde858abf3",
+            "id": "dfd137f3ad28dfec",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,12 +63,12 @@
             }
           },
           {
-            "id": "5f18059fcdf001be",
+            "id": "07fe794648ae141e",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "to_string",
+                "query": "path:\"233 note/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,40 +76,40 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
-            "id": "27c8b65c6bc626f3",
+            "id": "9dc9b9510b3f10f6",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "书签"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 228.5
+    "width": 300
   },
   "right": {
-    "id": "1bebe3dc5bf2ba95",
+    "id": "70f686cb0135357a",
     "type": "split",
     "children": [
       {
-        "id": "befc692610f54a03",
+        "id": "9f8e1111b23dd83f",
         "type": "tabs",
         "children": [
           {
-            "id": "2921eb9a0c478114",
+            "id": "e0c4c5aae533a8b1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "temps/temp1.md",
+                "file": "temps/temp2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +119,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for temp1"
+              "title": "temp2 的反向链接列表"
             }
           },
           {
-            "id": "feb21a22209d9650",
+            "id": "7eac933ce33e3fbb",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "temps/temp1.md",
+                "file": "233 note/小知识/环境变量.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from temp1"
+              "title": "环境变量 的出链列表"
             }
           },
           {
-            "id": "a4793b130116a5b8",
+            "id": "8451edf69a33976d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,56 +148,26 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "标签"
             }
           },
           {
-            "id": "97d27c1c67d508e1",
+            "id": "985df311a7e1f593",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "temps/temp1.md",
+                "file": "233 note/小知识/环境变量.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of temp1"
+              "title": "环境变量 的大纲"
             }
           },
           {
-            "id": "1abd3ccd647729c6",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "7e5914e52377db83",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
-            "id": "ef93ebf23613b159",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "a1d5486060c1b1bb",
+            "id": "77584e728d224b37",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -192,38 +177,78 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "6ee00c48fd85aa92",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "99cc42a1e160c043",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 205.5,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "bases:新建数据库": false,
-      "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "3a9f1953e6a25ee7",
+  "active": "99cc42a1e160c043",
   "lastOpenFiles": [
-    "temps/temp1.md",
-    "temps/temp2.md",
-    "temps/temp3.md",
-    "temps/temp4.md",
-    "temps/temp5.md",
+    "英语/随记.md",
+    "英语/近义词辨析.md",
+    "英语/多义词辨析.md",
+    "英语/听力.md",
+    "英语/听写.md",
+    "英语",
+    "理财/银行存款.md",
+    "理财/基金费用与A类C类.md",
+    "理财",
+    "待测试组件.md",
+    "公开课/Deep Learning/neuro.md",
+    "公开课/Deep Learning",
+    "中英术语对照/大模型& Agent 开发.md",
+    "note/项目结构.md",
+    "note/日报.md",
+    "note/文件类型 mdx.md",
+    "note/执行 story.md",
+    "note/执行 dockit.md",
+    "note/TODOS.md",
+    "note/Git 操作.md",
+    "note/macOS 快捷键.md",
+    "note/aaa.md",
+    "note",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "SKILLS/多义词辨析.md",
+    "SKILLS",
     "Pasted image 20260601151412.png",
     "Pasted image 20260529145910.png",
     "Pasted image 20260528214240.png",
@@ -234,35 +259,18 @@
     "Pasted image 20260528160352.png",
     "Pasted image 20260528145143.png",
     "Pasted image 20260528144242.png",
-    "Untitled 1.canvas",
-    "Question list.md",
-    "Untitled.canvas",
-    "数据库/miniob/命令解析.md",
-    "C++相关/黑马C++/类&对象/运算符重载/类型转换.md",
-    "数据库/miniob/更新日志.md",
-    "Excalidraw/理财.md",
-    "note/Git 操作.md",
-    "AGENTS.md",
-    "agent course.md",
-    "Memorandum.md",
-    "公开课/Deep Learning/neuro.md",
-    "公开课/Deep Learning",
-    "理财/银行存款.md",
-    "中英术语对照/机器学习&深度学习.md",
-    "待测试组件.md",
-    "Anthropic Prompt Engineer/09 complex-prompts.md",
-    "Excalidraw/Drawing 2026-04-02 19.34.25.excalidraw.md",
-    "Excalidraw/Drawing 2026-04-02 20.27.21.excalidraw.md",
     "Excalidraw/Drawing 2026-04-02 21.03.45.excalidraw.md",
+    "Excalidraw/理财.md",
+    "Excalidraw/Drawing 2026-04-02 20.27.21.excalidraw.md",
     "Excalidraw/Drawing 2026-04-02 20.31.46.excalidraw.md",
-    "TODOS.md",
-    "群聊信息.md",
-    "理财",
-    "SKILLS",
+    "Excalidraw/Drawing 2026-04-02 19.34.25.excalidraw.md",
     "Excalidraw",
+    "Anthropic Prompt Engineer/10.3 retrieval.md",
     "Anthropic Prompt Engineer",
-    "公开课/LangChain",
     "日志",
-    "中英术语对照"
+    "中英术语对照",
+    "obsidianNotes/note/temp",
+    "未命名.canvas",
+    "233 note/CS61B(Java)/未命名.canvas"
   ]
 }

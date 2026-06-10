@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temps/temp5.md",
+                "file": "temps/temp2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "temp5"
+              "title": "temp2"
             }
           }
         ]
@@ -219,12 +219,12 @@
   },
   "active": "3a9f1953e6a25ee7",
   "lastOpenFiles": [
-    "temps/temp5.md",
     "temps/temp1.md",
     "temps/temp2.md",
-    "Pasted image 20260601151412.png",
     "temps/temp3.md",
     "temps/temp4.md",
+    "temps/temp5.md",
+    "Pasted image 20260601151412.png",
     "Pasted image 20260529145910.png",
     "Pasted image 20260528214240.png",
     "Pasted image 20260528213950.png",

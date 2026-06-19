@@ -11,28 +11,24 @@
             "id": "a2a8bcd029e1d759",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Memorandum.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Memorandum"
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
             }
           },
           {
-            "id": "145457db7aad7cc6",
+            "id": "4afe00a4b2d7486e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks-dashboard.md",
+                "file": "temps/temp5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tasks-dashboard"
+              "title": "temp5"
             }
           }
         ],
@@ -93,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 247.5
   },
   "right": {
     "id": "70f686cb0135357a",
@@ -103,6 +99,21 @@
         "id": "9f8e1111b23dd83f",
         "type": "tabs",
         "children": [
+          {
+            "id": "8451edf69a33976d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
           {
             "id": "e0c4c5aae533a8b1",
             "type": "leaf",
@@ -137,33 +148,18 @@
             }
           },
           {
-            "id": "8451edf69a33976d",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
-          {
             "id": "985df311a7e1f593",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "233 note/小知识/环境变量.md",
+                "file": "Memorandum/TODOS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "环境变量 的大纲"
+              "title": "TODOS 的大纲"
             }
           },
           {
@@ -201,12 +197,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,45 +214,49 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "145457db7aad7cc6",
+  "active": "4afe00a4b2d7486e",
   "lastOpenFiles": [
-    "Memorandum.md",
-    "tasks-dashboard.md",
-    "Question list.md",
-    "agent course.md",
-    "待测试组件.md",
-    "群聊信息.md",
-    "算法作业.md",
-    "作业.md",
-    "AGENTS.md",
-    "temps/temp1.md",
-    "temps/性价比AI.md",
-    "Untitled 1.canvas",
-    "Untitled.canvas",
-    "日志/2026-06-16.md",
+    "日记/2026-06-18.md",
+    "temps/翻译agent开发前景.md",
     "temps/temp5.md",
-    "TODOS.md",
+    "temps/temp4.md",
+    "Memorandum/课程作业与考试.md",
+    "Memorandum/DASHBOARD.md",
     "temps/temp3.md",
+    "日记/2026-06-17.md",
+    "文档模板/日记模板.md",
+    "日记/2026-06-16.md",
+    "日记/2026-06-28.md",
+    "日记/2026-05-08.md",
+    "日记/2026-05-07.md",
+    "Memorandum/性价比AI.md",
+    "Memorandum/tasks 插件语法.md",
+    "Memorandum/TODOS.md",
+    "temps/temp1.md",
+    "temps/temp2.md",
+    "日记/2026-07-02.md",
+    "日记/2026-06-30.md",
+    "日记/2026-06-24.md",
+    "日记/2026-05-05.md",
+    "日记/2026-05-06.md",
+    "Memorandum/Memorandum.md",
+    "Memorandum/当前进程.md",
+    "日记/2026-06-25.md",
+    "文档模板",
+    "日记/特殊日程",
+    "Memorandum",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
     "Pasted image 20260526113737.png",
     "Pasted image 20260528170556.png",
     "Pasted image 20260528213950.png",
-    "temps/temp2.md",
-    "英语/随记.md",
-    "英语/近义词辨析.md",
-    "英语/多义词辨析.md",
-    "英语/听力.md",
-    "英语/听写.md",
     "英语",
-    "理财/银行存款.md",
-    "理财/基金费用与A类C类.md",
     "理财",
-    "公开课/Deep Learning/neuro.md",
     "公开课/Deep Learning",
-    "中英术语对照/大模型& Agent 开发.md",
-    "note/项目结构.md",
     "note",
     "SKILLS",
     "Pasted image 20260601151412.png",
@@ -269,9 +268,6 @@
     "Pasted image 20260528145143.png",
     "Excalidraw",
     "Anthropic Prompt Engineer",
-    "日志",
-    "中英术语对照",
-    "obsidianNotes/note/temp",
     "未命名.canvas",
     "233 note/CS61B(Java)/未命名.canvas"
   ]

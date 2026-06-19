@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: fvbmj-be7y2
+created: 2026-06-16T22:40:39+08:00

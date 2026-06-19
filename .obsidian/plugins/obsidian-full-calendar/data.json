@@ -1,0 +1,21 @@
+{
+  "calendarSources": [
+    {
+      "type": "dailynote",
+      "color": "#86eafe",
+      "heading": "日程"
+    },
+    {
+      "type": "local",
+      "color": "#a0ff52",
+      "directory": "日志/特殊日程"
+    }
+  ],
+  "defaultCalendar": 0,
+  "firstDay": 0,
+  "initialView": {
+    "desktop": "timeGridWeek",
+    "mobile": "timeGrid3Days"
+  },
+  "timeFormat24h": true
+}

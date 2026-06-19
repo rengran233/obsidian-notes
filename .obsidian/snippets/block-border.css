@@ -1,0 +1,14 @@
+/* 1. 为 YAML / 属性区域添加淡淡的背景色和虚线边框 */
+.metadata-container {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border: 1px dashed var(--background-modifier-border) !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+}
+
+/* 2. 为所有的代码块（包含 Dataview, Tasks 等）添加独立的背景色和左侧亮色边框 */
+.block-language-dataview, .block-language-tasks {
+    background-color: rgba(0, 0, 0, 0.05) !important; /* 淡淡的黑灰色背景 */
+    border-radius: 4px;
+    padding: 12px !important;
+}

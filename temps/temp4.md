@@ -26,3 +26,16 @@ $F_Y(y) = P\{Y \le y\}$
 2. 反解出 $\theta$ 
 二维离散--联合分布律
 期望、方差计算--常见分布公式--协方差
+
+
+
+curl -k https://token-plan-cn.xiaomimimo.com/v1 \ -H "Authorization: Bearer tp-cml4lwjrrnujc7qj0vqbcaaanyan799q1coycd6sny6eqco8b33"
+
+curl -k https://anyrouter.top/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer 你的_ANYROUTER_KEY" \
+  -d '{
+    "model": "gpt-3.5-turbo",
+    "messages": [{"role": "user", "content": "Hi"}],
+    "max_tokens": 5
+  }'

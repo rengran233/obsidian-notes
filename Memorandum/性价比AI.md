@@ -16,4 +16,11 @@ GLM套餐目前特别难抢, 而且算力不足, 比较慢, 容易限流
 
 
 - mino code: 不限量mimo-V2.5，无需注册使用自带auto模型
-- 
+- 阿里云百炼学生300元代金券
+- Qoder qwen模型限时每天200次免费调用，且五折
+- Qoder学生4000积分赠送
+- workbuddy？
+- 智谱AI开放平台新注册一个月送token
+- 公益站API
+	- https://sub.100xlabs.space/
+	- https://anyrouter.top/

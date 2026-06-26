@@ -488,5 +488,13 @@
     "defaultReminderMinutes": null
   },
   "enableDebugLogging": false,
-  "lastSeenVersion": "4.11.0"
+  "lastSeenVersion": "4.11.0",
+  "googleCalendarSyncQueue": [
+    {
+      "taskPath": "Memorandum/完善播放块跳转的能力.md",
+      "requestedAt": 1782145653150,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    }
+  ]
 }

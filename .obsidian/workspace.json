@@ -33,9 +33,22 @@
               "icon": "tasknotes-simple",
               "title": "kanban-default"
             }
+          },
+          {
+            "id": "ef6f52fc897865f1",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/mini-calendar-default.base",
+                "viewName": "Due"
+              },
+              "icon": "tasknotes-simple",
+              "title": "mini-calendar-default"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -229,8 +242,12 @@
       "tasknotes:创建新任务": false
     }
   },
-  "active": "daa5e82c9f227e0b",
+  "active": "ef6f52fc897865f1",
   "lastOpenFiles": [
+    "TaskNotes/Views/calendar-default.base",
+    "TaskNotes/Views/tasks-default.base",
+    "TaskNotes/Views/agenda-default.base",
+    "TaskNotes/Views/kanban-default.base",
     "计组/存储/虚拟存储.md",
     "计组/存储/cache.md",
     "计组/浮点数运算.md",
@@ -255,17 +272,12 @@
     "TaskNotes/Start Here.md",
     "TaskNotes/Views/relationships.base",
     "TaskNotes/Views/pomodoro-stats.base",
-    "TaskNotes/Views/agenda-default.base",
-    "TaskNotes/Views/calendar-default.base",
-    "TaskNotes/Views/tasks-default.base",
-    "TaskNotes/Views/kanban-default.base",
     "TaskNotes/Views/mini-calendar-default.base",
     "TaskNotes/Views",
     "TaskNotes",
     "temps/temp4.md",
     "temps/temp5.md",
     "temps/temp3.md",
-    "日记/2026-06-18.md",
     "文档模板",
     "Untitled.canvas",
     "Untitled 1.canvas",

@@ -22,33 +22,17 @@
             }
           },
           {
-            "id": "daa5e82c9f227e0b",
+            "id": "a699fe614bc96429",
             "type": "leaf",
             "state": {
-              "type": "bases",
-              "state": {
-                "file": "TaskNotes/Views/kanban-default.base",
-                "viewName": "Kanban Board"
-              },
-              "icon": "tasknotes-simple",
-              "title": "kanban-default"
-            }
-          },
-          {
-            "id": "ef6f52fc897865f1",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "TaskNotes/Views/mini-calendar-default.base",
-                "viewName": "Due"
-              },
-              "icon": "tasknotes-simple",
-              "title": "mini-calendar-default"
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -242,12 +226,13 @@
       "tasknotes:创建新任务": false
     }
   },
-  "active": "ef6f52fc897865f1",
+  "active": "a699fe614bc96429",
   "lastOpenFiles": [
+    "TaskNotes/Views/kanban-default.base",
+    "TaskNotes/Views/mini-calendar-default.base",
     "TaskNotes/Views/calendar-default.base",
     "TaskNotes/Views/tasks-default.base",
     "TaskNotes/Views/agenda-default.base",
-    "TaskNotes/Views/kanban-default.base",
     "计组/存储/虚拟存储.md",
     "计组/存储/cache.md",
     "计组/浮点数运算.md",
@@ -272,7 +257,6 @@
     "TaskNotes/Start Here.md",
     "TaskNotes/Views/relationships.base",
     "TaskNotes/Views/pomodoro-stats.base",
-    "TaskNotes/Views/mini-calendar-default.base",
     "TaskNotes/Views",
     "TaskNotes",
     "temps/temp4.md",

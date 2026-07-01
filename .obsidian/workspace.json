@@ -13,26 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计组/存储/虚拟存储.md",
+                "file": "Memorandum/课程作业与考试.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "虚拟存储"
-            }
-          },
-          {
-            "id": "a699fe614bc96429",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
+              "title": "课程作业与考试"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -226,14 +215,17 @@
       "tasknotes:创建新任务": false
     }
   },
-  "active": "a699fe614bc96429",
+  "active": "3c9dc234f42816cc",
   "lastOpenFiles": [
+    "Memorandum/当前进程.md",
+    "temps/temp1.md",
+    "temps/AGENT 记忆系统.md",
+    "计组/存储/虚拟存储.md",
     "TaskNotes/Views/kanban-default.base",
     "TaskNotes/Views/mini-calendar-default.base",
     "TaskNotes/Views/calendar-default.base",
     "TaskNotes/Views/tasks-default.base",
     "TaskNotes/Views/agenda-default.base",
-    "计组/存储/虚拟存储.md",
     "计组/存储/cache.md",
     "计组/浮点数运算.md",
     "计组/寄存器选择.md",
@@ -243,14 +235,11 @@
     "计组/指令.md",
     "计组/内存寻址.md",
     "日记/2026-06-26.md",
-    "temps/temp1.md",
     "temps/temp2.md",
-    "Memorandum/当前进程.md",
     "Memorandum/完善播放块跳转的能力.md",
     "Memorandum/课程作业与考试.md",
     "Memorandum/DASHBOARD.md",
     "Memorandum/性价比AI.md",
-    "temps/AGENT 记忆系统.md",
     "temps/翻译agent开发前景.md",
     "Excalidraw/Drawing 2026-06-22 11.44.42.excalidraw.md",
     "Memorandum/Memorandum.md",
